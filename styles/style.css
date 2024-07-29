@@ -3,9 +3,9 @@
 
 .header {
     padding: 92px 24px 96px;
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
+    display: flex;
     align-items: center;
+    justify-content: space-around;
     width: 100%;
 
 }
@@ -20,6 +20,7 @@
     font-size: 18px;
     list-style: circle;
     text-wrap: nowrap;
+    text-underline-offset: 4px;
 }
 
 .header__links-item:first-of-type {
@@ -47,6 +48,21 @@
 .socials__info-list {
     text-wrap: wrap;
     list-style: none;
+    line-height: 24.3px;
+    letter-spacing: .01em;
+    text-underline-offset: 4px;
+}
+
+.socials_info-item {
+    font-size: 18px;
+}
+
+.socials_info-item a {
+    text-decoration: underline;
+}
+
+.post__adress {
+    letter-spacing: 0;
 }
 
 .cover {
@@ -214,4 +230,114 @@
 }
 
 
+.lots__footer {
+    margin: 30px 0 0 40px;
+    font-size: 20px;
+}
 
+.lots__more {
+    text-decoration: none;
+    display: block;
+    max-width: 192px;
+    border-bottom: 1px solid black;
+}
+
+.about {
+    padding: 0 24px 180px;
+    display: flex;
+    gap: 72px;
+}
+
+.about__image {
+    width: 240px;
+    height: 240px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    border-radius: 50%;
+    margin-top: 35px;
+    margin-left: 47px;
+}
+
+.about__image img {
+    width: 148px;
+    height: 114px;
+}
+
+.about__text {
+    max-width: 693px;
+}
+
+.about__header h3 {
+    margin-top: 135px;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+.about__text-main {
+    margin-top: 100px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    line-height: 24px;
+}
+
+.ls__neg1 {
+    letter-spacing: -.01em;
+}
+
+.ls__0 {
+    letter-spacing: 0;
+} 
+
+.ls__1 {
+    letter-spacing: .01em;
+}
+
+.ls__2 {
+    letter-spacing: .02em;
+}
+
+.ls__3 {
+    letter-spacing: .03em;
+}
+
+.ls__4 {
+    letter-spacing: .03em;
+}
+
+.footer {
+    margin: 0 50px 88px;
+    padding-top: 1px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    max-width: 1000px;
+    max-height: 99px;
+}
+
+.media__links-image {
+    display: block;
+    width: 48px;
+    height: 48px;
+}
+
+.media__links-list {
+    display: flex;
+    gap: 48px;
+    list-style: none;
+}
+
+.footer .header__links-list {
+    flex-direction: column;
+    text-align: center;
+    list-style: none;
+    margin-left: 40px;
+    text-underline-offset: 4px;
+
+}
