@@ -68,8 +68,7 @@
 .cover {
     background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
-    background-size: 1100px 757px;
-    background-size: cover;
+    background-size: 1100px 757px cover;
     background-position: center;
     min-height: 757px;
 
