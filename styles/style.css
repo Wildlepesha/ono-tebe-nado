@@ -22,7 +22,7 @@
 
 .header__links-list {
     display: flex;
-    gap: 36px;
+    gap: 33px;
     color: #000;
     list-style: circle;
     text-wrap: nowrap;
