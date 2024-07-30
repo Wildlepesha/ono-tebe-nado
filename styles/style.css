@@ -4,7 +4,7 @@
 .header {
     padding: 92px 24px 96px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: 1fr 0.5fr 1fr;
     align-items: center;
     width: 100%;
     font-size: 18px;
