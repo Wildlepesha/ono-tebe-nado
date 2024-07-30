@@ -11,13 +11,18 @@
 
 }
 
+.header__links {
+    display: flex;
+    justify-content: center;
+}
+
 .header .socials__info {
     justify-self: end;
 }
 
 .header__links-list {
     display: flex;
-    justify-content: space-between;
+    gap: 36px;
     color: #000;
     list-style: circle;
     text-wrap: nowrap;
