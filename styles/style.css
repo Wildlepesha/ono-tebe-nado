@@ -3,10 +3,11 @@
 
 .header {
     padding: 92px 24px 96px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     align-items: center;
-    justify-content: space-around;
     width: 100%;
+    font-size: 18px;
 
 }
 
@@ -16,8 +17,8 @@
 
 .header__links-list {
     display: flex;
+    justify-content: space-between;
     color: #000;
-    font-size: 18px;
     list-style: circle;
     text-wrap: nowrap;
     text-underline-offset: 4px;
@@ -38,6 +39,7 @@
 .header__logo-link {
     display: block;
     height: 105px;
+    justify-self: center;
 }
 
 .header_logo-image {
@@ -51,6 +53,7 @@
     line-height: 24.3px;
     letter-spacing: .01em;
     text-underline-offset: 4px;
+    justify-self: end;
 }
 
 .socials_info-item {
