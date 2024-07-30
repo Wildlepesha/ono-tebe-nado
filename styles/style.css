@@ -24,7 +24,7 @@
   display: flex;
   gap: 33px;
   width: 100%;
-  padding: 0 36px 0 26.5px;
+  padding: 3px 36px 0 26.5px;
   color: #000;
   text-underline-offset: 4px;
   list-style: circle;
