@@ -8,16 +8,10 @@
   font-size: 18px;
 }
 
-.header__links {
+.header__links,
+.footer__links {
   display: flex;
   justify-content: center;
-}
-
-.header .socials__info {
-  justify-self: end;
-  width: 100%;
-  max-width: 240px;
-  margin-right: 25.5px;
 }
 
 .header__links-list {
@@ -35,18 +29,14 @@
   list-style: none;
 }
 
-.header__links-item a {
-  color: #000;
-}
-
-.link__active {
+.link_active {
   text-decoration: none;
 }
 
 .header__logo-link {
   display: block;
   justify-self: center;
-  height: 105px;
+  font-size: 0;
 }
 
 .header_logo-image {
@@ -54,8 +44,13 @@
   height: 105px;
 }
 
-.socials__info-list {
+.header__socials-info,
+.footer__socials-info {
   justify-self: end;
+  min-width: 240px;
+  margin-right: 25.5px;
+  font-size: 18px;
+  font-style: normal;
   line-height: 24.3px;
   letter-spacing: 0.01em;
   text-underline-offset: 4px;
@@ -63,16 +58,15 @@
   text-wrap: wrap;
 }
 
-.socials_info-item {
-  font-size: 18px;
-}
-
-.socials_info-item a {
+.socials-info__item {
+  display: block;
+  width: 100%;
   text-decoration: underline;
 }
 
-.post__adress {
+.post-adress {
   letter-spacing: 0;
+  text-decoration: none;
 }
 
 .cover {
@@ -90,9 +84,7 @@
   background-color: rgb(0 0 0 / 0.6);
 }
 
-/* Оно тебе надо текст с разным letter spacing */
-
-.cover__title {
+.cover__title-header {
   padding: 165px 50px 135px;
   color: #fff;
   font-weight: bold;
@@ -129,8 +121,6 @@
   text-align: right;
 }
 
-/* Конец блока выставления текста */
-
 .cover__bet-title {
   display: flex;
   justify-content: space-between;
@@ -140,19 +130,15 @@
   font-size: 22px;
 }
 
-.cover__bet-title_header {
+.cover__bet-title-header {
   font-weight: normal;
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
-  word-spacing: 0.9em;
-}
-
-.ws__8 {
-    word-spacing: 0.8em;
+  word-spacing: 0.8em;
 }
   
-.ws__9 {
+.word-spacing-extended {
   word-spacing: 0.9em;
 }
 
@@ -167,13 +153,15 @@
   text-decoration: none;
   text-transform: uppercase;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .lots {
   padding: 179px 24px 146px;
 }
 
-.lots__header h2 {
+.lots__header {
+  display: block;
   padding: 0 0 27px 40px;
   font-weight: bold;
   font-size: 40px;
@@ -215,7 +203,7 @@
   line-height: 1.2em;
   text-align: start;
   text-decoration: underline;
-  text-underline-offset: 2.5px;
+  text-underline-offset: 3px;
   text-transform: uppercase;
 }
 
@@ -223,28 +211,23 @@
   font-size: 20px;
 }
 
-.lot__1 {
+.lot-film {
   background-image: url(../images/card-lot-01.jpg);
 }
 
-.lot__2 {
+.lot-book {
   background-image: url(../images/card-lot-02.jpg);
 }
 
-.lot__3 {
+.lot-drawning {
   background-image: url(../images/card-lot-03.jpg);
-}
-
-.lots__footer {
-  margin: 30px 0 0 40px;
-  font-size: 20px;
 }
 
 .lots__more {
   display: block;
-  max-width: 192px;
-  border-bottom: 1px solid black;
-  text-decoration: none;
+  margin: 30px 0 0 40px;
+  font-size: 20px;
+  text-underline-offset: 4px;
 }
 
 .about {
@@ -275,7 +258,8 @@
   max-width: 693px;
 }
 
-.about__header h3 {
+.about__header {
+  display: block;
   margin-top: 135px;
   font-weight: bold;
   font-size: 40px;
@@ -292,28 +276,24 @@
   line-height: 24px;
 }
 
-.ls__neg1 {
+.text-main_letter-spacing-low {
   letter-spacing: -0.01em;
 }
 
-.ls__0 {
-  letter-spacing: 0;
+.text-main_letter-spacing-average {
+  letter-spacing: .01em;
 }
 
-.ls__1 {
-  letter-spacing: 0.01em;
-}
-
-.ls__2 {
+.text-main_letter-spacing-above-average {
   letter-spacing: 0.02em;
 }
 
-.ls__3 {
+.text-main_letter-spacing-high {
   letter-spacing: 0.03em;
 }
 
-.ls__4 {
-  letter-spacing: 0.03em;
+.text-main_letter-spacing-wide {
+  letter-spacing: 0.04em;
 }
 
 .footer {
@@ -321,7 +301,7 @@
   justify-content: space-between;
   align-items: start;
   max-width: 1000px;
-  max-height: 99px;
+  min-height: 99px;
   margin: 0 50px 88px;
   padding-top: 1px;
 }
@@ -334,16 +314,18 @@
 
 .media__links-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 48px;
+  max-width: 240px;
   list-style: none;
 }
 
-.footer .header__links-list {
+.footer__links-list {
   flex-direction: column;
   gap: 0px;
-  margin-left: 45px;
+  padding: 0 30px 0 0;
   font-size: 18px;
-  padding-top: 0;
   text-align: center;
   text-underline-offset: 4px;
   list-style: none;
